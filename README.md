@@ -38,13 +38,7 @@ https://golang.org/dl/
 
 * Install [Golang](https://golang.org/) for Windows.
 
-/=====================================================================/
 
-## Files description
-
-/=====================================================================/
-
-The program only need a single parameter "go run main.go $Parameter"
 
 /=====================================================================/
 
@@ -64,7 +58,7 @@ The program only need a single parameter "go run main.go $Parameter"
 
         > go run main.go 
 
-* Open an Internet Browser and go to [Localhost port 9000, route documents](http://localhost:9000/documents)
+* Open an Internet Browser [Localhost port 9000](http://localhost:9000/documents)
 
 
 ## Output
@@ -72,8 +66,8 @@ The program only need a single parameter "go run main.go $Parameter"
 ### Implement missing operations
 
 ```
-* GET	        /documents	List of documents
-* GET	        /documents/:id	Get documents with ID
-* POST	        /documents	Create a document,having the file as body data
-* DELETE	/documents/:id	Deletes a document
+ GET	        /documents	List of documents
+ GET	        /documents/:id	Get documents with ID
+ POST	        /documents	Create a document,having the file as body data
+ DELETE	/documents/:id	Deletes a document
 ```
