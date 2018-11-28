@@ -25,7 +25,7 @@ CLASS EXERCISE
 
 -> ID should be file's MD5 checksum
 
-->  [Base component](https://github.com/timoteoponce/ds-persistence)
+-> [Base_Component] (https://github.com/timoteoponce/ds-persistence)
 ```
 
 /=====================================================================/
@@ -69,5 +69,5 @@ https://golang.org/dl/
  GET	        /documents	List of documents
  GET	        /documents/:id	Get documents with ID
  POST	        /documents	Create a document,having the file as body data
- DELETE	/documents/:id	Deletes a document
+ DELETE 	/documents/:id	Deletes a document
 ```
