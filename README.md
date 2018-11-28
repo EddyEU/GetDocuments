@@ -4,38 +4,43 @@ MIS - Maestria en Ingenieria de Software
 
 author: Ing. Eddy Escalante Ustariz
 
-respository: https://github.com/EddyEU/WORD_COUNTER
+respository: https://github.com/EddyEU/GetDocuments
 
 date: 19/11/2018
 
 /=====================================================================/
 
-PROBLEM
+## PROBLEM
 
 /=====================================================================/
 
 CLASS EXERCISE 
 
+```
 -> Implement GetDocuments operation
 
 -> Use a local folder to store files 
 
 -> Return all files in the local folder 
 
--> ID should be file's MD5 checksum Base component
+-> ID should be file's MD5 checksum
 
+->  [Base component](https://github.com/timoteoponce/ds-persistence)
+```
 
 /=====================================================================/
 
-Download GO
+## Download GO
 
 /=====================================================================/
 
 https://golang.org/dl/
 
+* Install [Golang](https://golang.org/) for Windows.
+
 /=====================================================================/
 
-Files description
+## Files description
 
 /=====================================================================/
 
@@ -43,7 +48,7 @@ The program only need a single parameter "go run main.go $Parameter"
 
 /=====================================================================/
 
-How to compile
+### How to compile
 
 /=====================================================================/
 
@@ -51,16 +56,24 @@ How to compile
 
 /=====================================================================/
 
-How to run
+### How to run
 
 /=====================================================================/
 
-Option 1.- Execute through go.
+* Execute through go.
 
-        >go run main.go 
+        > go run main.go 
 
-The program only need a single parameter "go run main.go $Parameter"
+* Open an Internet Browser and go to [Localhost port 9000, route documents](http://localhost:9000/documents)
 
-Where $Parameter == absolute path. 
 
-Example: go run main.go C:\Go
+## Output
+
+### Implement missing operations
+
+```
+* GET	        /documents	List of documents
+* GET	        /documents/:id	Get documents with ID
+* POST	        /documents	Create a document,having the file as body data
+* DELETE	/documents/:id	Deletes a document
+```
